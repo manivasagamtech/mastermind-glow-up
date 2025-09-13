@@ -22,6 +22,19 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        energy: {
+          DEFAULT: "hsl(var(--energy))",
+          foreground: "hsl(var(--energy-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        vibrant: {
+          DEFAULT: "hsl(var(--vibrant))",
+          foreground: "hsl(var(--vibrant-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -84,6 +97,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "gradient-shift": "gradientShift 8s ease infinite",
+        "fade-in-up": "fadeInUp 0.6s ease-out",
+        "staggered-fade": "staggeredFadeIn 0.6s ease-out",
       },
     },
   },
