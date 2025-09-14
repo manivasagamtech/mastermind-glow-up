@@ -46,8 +46,11 @@ Looking forward to hearing from you!`;
     <section id="home" className="min-h-screen relative bg-animated-dark text-white">
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-30 brightness-125"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat opacity-30 brightness-125"
+        style={{ 
+          backgroundImage: `url(${heroBackground})`,
+          backgroundPosition: 'center 25%'
+        }}
       />
       
       <div className="relative z-10 container mx-auto px-6 py-32 min-h-screen flex items-center">
