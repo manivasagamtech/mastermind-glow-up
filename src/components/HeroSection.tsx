@@ -46,7 +46,7 @@ Looking forward to hearing from you!`;
     <section id="home" className="min-h-screen relative bg-animated-dark text-white">
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-30 brightness-125"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       
@@ -72,15 +72,6 @@ Looking forward to hearing from you!`;
               Expert Life Transformation Coaches & Certified Nutrition Consultants
             </p>
             
-            <div className="flex justify-center lg:justify-start">
-              <Button 
-                className="btn-hero bg-white text-black hover:bg-gray-100"
-                size="lg"
-                onClick={() => document.getElementById('consultation-form')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Book Consultation
-              </Button>
-            </div>
           </div>
 
           {/* Right Side - Consultation Form */}

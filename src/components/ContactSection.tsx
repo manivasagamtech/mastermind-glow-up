@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, Instagram, Youtube, MessageCircle } from 'lucide-react';
+import { Phone, Instagram, Youtube, MessageCircle, Linkedin } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -70,6 +70,12 @@ Looking forward to starting my transformation journey!`;
       handle: "@MASTERMINDBODYGLOBAL",
       url: "https://youtube.com/@MASTERMINDBODYGLOBAL",
       icon: Youtube
+    },
+    {
+      platform: "LinkedIn",
+      handle: "MasterMind Body Global",
+      url: "http://linkedin.com/in/mastermind-bodyglobal-950991370",
+      icon: Linkedin
     }
   ];
 
@@ -120,7 +126,7 @@ Looking forward to starting my transformation journey!`;
             {/* Social Media Links */}
             <div>
               <h3 className="text-xl font-bold mb-4 text-foreground">Follow Us</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
@@ -220,7 +226,7 @@ Looking forward to starting my transformation journey!`;
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 className="bg-white text-black hover:bg-gray-100 font-bold px-8 py-3"
-                onClick={() => window.open('https://wa.me/919811218842', '_blank')}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Book Free Consultation
               </Button>

@@ -63,11 +63,10 @@ const VideoTestimonials = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Real Transformations
+            Life Enhancement Videos
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch life transformation videos from our clients who have experienced 
-            breakthrough results in health, relationships, career, and personal growth.
+            Watch short videos to transform and improve your life
           </p>
         </div>
 
@@ -112,10 +111,6 @@ const VideoTestimonials = () => {
                   />
                 </div>
                 
-                <div className="p-4">
-                  <h3 className="font-semibold text-foreground mb-2">{video.title}</h3>
-                  <p className="text-sm text-muted-foreground">{video.description}</p>
-                </div>
               </div>
             ))}
           </div>
