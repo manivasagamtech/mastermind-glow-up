@@ -46,7 +46,7 @@ Looking forward to hearing from you!`;
     <section id="home" className="min-h-screen relative bg-animated-dark text-white">
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-no-repeat opacity-30 brightness-125"
+        className="absolute inset-0 bg-cover bg-no-repeat opacity-70 brightness-125"
         style={{ 
           backgroundImage: `url(${heroBackground})`,
           backgroundPosition: 'center 25%'
