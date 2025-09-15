@@ -56,10 +56,10 @@ Looking forward to hearing from you!`;
       <div className="relative z-10 container mx-auto px-6 py-32 min-h-screen flex items-end pb-20">
         <div className="w-full text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-energy">MasterMind Body Global</span>
+            <span className="block text-energy bg-black/40 backdrop-blur-sm px-6 py-3 rounded-lg">MasterMind Body Global</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto bg-black/30 backdrop-blur-sm px-4 py-2 rounded-lg">
             Expert Life Transformation Coaches & Certified Nutrition Consultants
           </p>
         </div>
