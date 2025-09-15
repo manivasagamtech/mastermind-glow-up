@@ -28,8 +28,8 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-background/90 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
+          ? 'bg-slate-900/95 backdrop-blur-md shadow-lg' 
+          : 'bg-slate-900/60 backdrop-blur-sm'
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
@@ -41,7 +41,7 @@ const Header = () => {
               alt="MasterMind Body Global Logo" 
               className="w-12 h-12 rounded-full object-cover"
             />
-            <span className="text-xl font-bold text-foreground">
+            <span className="text-xl font-bold text-white">
               MasterMind Body Global
             </span>
           </div>
@@ -52,7 +52,14 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="text-white hover:text-energy transition-colors duration-300 font-medium"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector(item.href);
+                  if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 {item.label}
               </a>
@@ -61,7 +68,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className="md:hidden text-white hover:text-energy transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -77,8 +84,15 @@ const Header = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-white hover:text-energy transition-colors duration-300 font-medium"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMenuOpen(false);
+                    const target = document.querySelector(item.href);
+                    if (target) {
+                      target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                 >
                   {item.label}
                 </a>

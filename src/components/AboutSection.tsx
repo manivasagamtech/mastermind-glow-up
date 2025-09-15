@@ -80,6 +80,95 @@ const AboutSection = () => {
             </Card>
           </div>
         </div>
+        
+        {/* Consultation Form */}
+        <div className="mt-16 flex justify-center">
+          <Card className="w-full max-w-md bg-white/10 backdrop-blur-md border-primary/20">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold mb-6 text-center text-foreground">
+                Start Your Transformation
+              </h3>
+              
+              <form id="consultation-form" onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target as HTMLFormElement);
+                const message = `Hi! I'd like to book a consultation.
+                
+Name: ${formData.get('fullName')}
+Mobile: ${formData.get('mobile')}
+Email: ${formData.get('email')}
+Consultation Type: ${formData.get('consultationType')}
+
+Looking forward to hearing from you!`;
+                const whatsappUrl = `https://wa.me/919811218842?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }} className="space-y-4">
+                <div>
+                  <label htmlFor="fullName" className="block text-sm font-medium text-foreground mb-1">Full Name</label>
+                  <input
+                    id="fullName"
+                    name="fullName"
+                    type="text"
+                    required
+                    className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="mobile" className="block text-sm font-medium text-foreground mb-1">Mobile Number</label>
+                  <input
+                    id="mobile"
+                    name="mobile"
+                    type="tel"
+                    required
+                    className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground"
+                    placeholder="+91 12345 67890"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">Email Address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="consultationType" className="block text-sm font-medium text-foreground mb-1">Type of Consultation</label>
+                  <select 
+                    id="consultationType"
+                    name="consultationType"
+                    required
+                    className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground"
+                  >
+                    <option value="">Select consultation type</option>
+                    <option value="Life Transformation Coaching">Life Transformation Coaching</option>
+                    <option value="Diet & Nutrition Counselling">Diet & Nutrition Counselling</option>
+                    <option value="Mind Coaching">Mind Coaching</option>
+                    <option value="Relationship Guidance">Relationship Guidance</option>
+                    <option value="Corporate Leadership">Corporate Leadership</option>
+                    <option value="English Fluency">English Fluency</option>
+                    <option value="Health Issues - Cancer/Diabetes/BP/Depression">Health Issues - Cancer/Diabetes/BP/Depression</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                
+                <button 
+                  type="submit" 
+                  className="w-full bg-energy hover:bg-energy/90 text-white font-bold py-3 px-6 rounded-md transition-colors"
+                >
+                  Book Now via WhatsApp
+                </button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

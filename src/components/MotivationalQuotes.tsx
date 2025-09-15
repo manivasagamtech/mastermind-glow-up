@@ -4,7 +4,7 @@ const MotivationalQuotes = () => {
   const [visibleQuotes, setVisibleQuotes] = useState<boolean[]>([false, false, false]);
 
   const quotes = [
-    "Create your life that you love to live",
+    "Create the Life You Love",
     "Break through limits and step into your true potential", 
     "Design a life filled with purpose, passion, and joy"
   ];
