@@ -107,12 +107,12 @@ const ServicesSection = () => {
             <p className="text-lg mb-6">
               Book a consultation today and take the first step towards your new life.
             </p>
-            <a 
-              href="#contact" 
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-block bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
             >
               Start Your Journey
-            </a>
+            </button>
           </div>
         </div>
       </div>

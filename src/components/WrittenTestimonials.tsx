@@ -120,12 +120,12 @@ const WrittenTestimonials = () => {
             <p className="text-lg mb-6">
               Join hundreds of satisfied clients who have transformed their lives with our expert guidance.
             </p>
-            <a 
-              href="#contact" 
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-block bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
             >
               Start Your Journey Today
-            </a>
+            </button>
           </div>
         </div>
       </div>
