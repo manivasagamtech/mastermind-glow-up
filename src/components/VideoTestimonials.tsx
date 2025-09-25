@@ -7,44 +7,19 @@ const VideoTestimonials = () => {
 
   const videos = [
     {
-      id: "L5mV0Prh9TY",
-      title: "Life Transformation Success Story",
-      description: "Amazing transformation journey"
+      id: "KNPMYR5S5A8",
+      title: "Neha Thakur, Mumbai",
+      description: "Real transformation story"
     },
     {
-      id: "HNSUrh3-3UI", 
-      title: "Health Recovery Testimonial",
-      description: "Overcoming health challenges"
+      id: "0eiw2OWlnhQ", 
+      title: "Punit Chhatwal, Singapore",
+      description: "Life coaching success"
     },
     {
-      id: "v9dGJMfW4vI",
-      title: "Career Breakthrough Story",
-      description: "Professional growth success"
-    },
-    {
-      id: "F-6rvBP9jO4",
-      title: "Relationship Healing Journey",
-      description: "Family harmony restoration"
-    },
-    {
-      id: "mLlLlyx0Btg",
-      title: "Mind Coaching Results",
-      description: "Mental wellness achievement"
-    },
-    {
-      id: "vOiPZINJiyg",
-      title: "Nutrition Transformation",
-      description: "Health and vitality improvement"
-    },
-    {
-      id: "mjqTHmT7FRU",
-      title: "Corporate Success Story",
-      description: "Leadership development"
-    },
-    {
-      id: "3uRnoOhFaLY",
-      title: "Complete Life Makeover", 
-      description: "Holistic transformation"
+      id: "UPoCA_SjQyk",
+      title: "Anuradha Shah, Mumbai",
+      description: "Personal growth journey"
     }
   ];
 
@@ -63,10 +38,10 @@ const VideoTestimonials = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Life Enhancement Videos
+            Video Testimonials
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch short videos to transform and improve your life
+            Watch our testimonials from clients – the real transformations
           </p>
         </div>
 

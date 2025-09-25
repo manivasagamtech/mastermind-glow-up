@@ -205,7 +205,7 @@ Looking forward to starting my transformation journey!`;
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                  className="w-full bg-[hsl(var(--whatsapp))] hover:bg-[hsl(var(--whatsapp))]/90 text-white font-bold"
                   size="lg"
                 >
                   Send Message via WhatsApp

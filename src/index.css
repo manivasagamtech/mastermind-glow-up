@@ -30,6 +30,10 @@ All colors MUST be HSL.
     --success: 120 70% 50%;
     --success-foreground: 0 0% 100%;
     
+    /* WhatsApp green color */
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+    
     /* Accent colors for highlights */
     --vibrant: 300 80% 60%;
     --vibrant-foreground: 0 0% 100%;
@@ -104,6 +108,9 @@ All colors MUST be HSL.
     
     --success: 120 70% 55%;
     --success-foreground: 222.2 84% 4.9%;
+    
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
     
     --vibrant: 300 80% 65%;
     --vibrant-foreground: 222.2 84% 4.9%;

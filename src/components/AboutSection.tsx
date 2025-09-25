@@ -161,7 +161,7 @@ Looking forward to hearing from you!`;
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-energy hover:bg-energy/90 text-white font-bold py-3 px-6 rounded-md transition-colors"
+                  className="w-full bg-[hsl(var(--whatsapp))] hover:bg-[hsl(var(--whatsapp))]/90 text-white font-bold py-3 px-6 rounded-md transition-colors"
                 >
                   Book Now via WhatsApp
                 </button>
