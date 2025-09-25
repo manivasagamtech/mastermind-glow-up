@@ -5,9 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // For GitHub Pages project site at https://manivasagamtech.github.io/mastermind-glow-up/
-  // Ensure asset paths are correct in production builds
-  base: mode === "production" ? "/mastermind-glow-up/" : "/",
+  // Set base to "/" to avoid the GitHub Pages folder path
+  base: "/",
   server: {
     host: "::",
     port: 8080,
