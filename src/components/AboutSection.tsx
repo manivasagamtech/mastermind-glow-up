@@ -49,15 +49,15 @@ const AboutSection = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4 text-foreground">
-                  Ms. Shalini Chopra
+                  Ms. Poonam Modi
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Certified Nutrition Expert and Corporate Communication Specialist. 
-                  Focuses on holistic health transformation and professional development.
+                  Certified Nutrition Expert and Wellness Coach. 
+                  Focuses on holistic health transformation and dietary guidance.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Nutrition Expert</Badge>
-                  <Badge variant="secondary">Corporate Communication</Badge>
+                  <Badge variant="secondary">Wellness Coach</Badge>
                   <Badge variant="secondary">Health Specialist</Badge>
                 </div>
               </CardContent>
