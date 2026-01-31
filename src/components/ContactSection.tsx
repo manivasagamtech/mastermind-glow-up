@@ -39,10 +39,10 @@ Looking forward to starting my transformation journey!`;
       role: "Life Transformation Coach & Director"
     },
     {
-      name: "Ms. Shalini Chopra", 
-      phone: "+91 98185 70805",
-      whatsapp: "https://wa.me/919818570805",
-      role: "Nutrition Expert & Corporate Coach"
+      name: "Ms. Poonam Modi", 
+      phone: "+91 99908 97076",
+      whatsapp: "https://wa.me/919990897076",
+      role: "Nutrition Expert & Wellness Coach"
     }
   ];
 
@@ -60,9 +60,9 @@ Looking forward to starting my transformation journey!`;
       icon: Instagram
     },
     {
-      platform: "Instagram - Shalini Chopra",
-      handle: "@shalini1609.chopra",
-      url: "https://instagram.com/shalini1609.chopra", 
+      platform: "Instagram - Poonam Modi",
+      handle: "@poonammodi.nutritionist",
+      url: "https://www.instagram.com/poonammodi.nutritionist", 
       icon: Instagram
     },
     {
