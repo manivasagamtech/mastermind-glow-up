@@ -12,7 +12,7 @@ const AboutSection = () => {
             Meet Your Transformation Experts
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dr. Deepti Verma and Ms. Shalini Chopra bring years of expertise in life transformation, 
+            Dr. Deepti Verma and Ms. Poonam Modi bring years of expertise in life transformation, 
             nutrition counseling, and holistic wellness to help you achieve your goals.
           </p>
         </div>
@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <img 
               src={aboutImage} 
-              alt="Dr. Deepti Verma and Ms. Shalini Chopra - Life Transformation Coaches"
+              alt="Dr. Deepti Verma and Ms. Poonam Modi - Life Transformation Coaches"
               className="rounded-3xl shadow-2xl w-full max-w-md object-cover"
             />
           </div>
