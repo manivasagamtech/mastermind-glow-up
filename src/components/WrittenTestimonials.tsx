@@ -15,7 +15,7 @@ const WrittenTestimonials = () => {
     {
       name: "Rajesh Kumar",
       background: "Corporate Executive",
-      story: "I was stuck in my career for years, earning the same salary with no growth. Ms. Shalini's career coaching and leadership training completely transformed my professional trajectory. I now lead a team of 50+ people.",
+      story: "I was stuck in my career for years, earning the same salary with no growth. Ms. Poonam's career coaching and leadership training completely transformed my professional trajectory. I now lead a team of 50+ people.",
       results: "300% salary increase, leadership promotion, improved confidence",
       rating: 5,
       category: "Career Growth"

@@ -17,10 +17,10 @@ const ServicesSection = () => {
       features: ["Personal Growth", "Goal Achievement", "Mindset Transformation", "Life Purpose Discovery"]
     },
     {
-      title: "Health & Nutrition Consulting",
+      title: "Health, Nutrition & Weight Management Consulting",
       description: "Specialized support for serious health conditions including cancer recovery, diabetes management, hypertension control, and depression support with Ayurvedic principles.",
       image: nutritionCoachingImg,
-      features: ["Cancer Recovery", "Diabetes Management", "BP Control", "Depression Support"]
+      features: ["Cancer Recovery", "Diabetes Management", "BP Control", "Depression Support", "Weight Management"]
     },
     {
       title: "Money & Career Coaching",
