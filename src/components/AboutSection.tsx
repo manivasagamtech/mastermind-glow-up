@@ -38,10 +38,20 @@ const AboutSection = () => {
                   Director & Digital Creator specializing in life transformation coaching and mind wellness. 
                   Expert in helping clients overcome mental blocks and achieve breakthrough results.
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="secondary">Certified Life Coach</Badge>
                   <Badge variant="secondary">Mind Coaching Specialist</Badge>
                   <Badge variant="secondary">Digital Creator</Badge>
+                </div>
+                <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-lg p-4 border border-amber-200">
+                  <h4 className="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                    🏆 Awards & Recognitions
+                  </h4>
+                  <ul className="text-sm text-amber-900 space-y-1">
+                    <li>• Lifetime Achievement Award 2019 in Nutrition</li>
+                    <li>• Top 100 Influential Women in India</li>
+                    <li>• Excellence in Education (Singapore)</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
@@ -51,6 +61,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-foreground">
                   Ms. Poonam Modi
                 </h3>
+                <p className="text-sm text-primary font-medium mb-2">Director</p>
                 <p className="text-muted-foreground mb-4">
                   Certified Nutrition Expert and Wellness Coach. 
                   Focuses on holistic health transformation and dietary guidance.
