@@ -61,7 +61,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-foreground">
                   Ms. Poonam Modi
                 </h3>
-                <p className="text-sm text-primary font-medium mb-2">Director</p>
+                <span className="inline-block bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-full mb-3">Director</span>
                 <p className="text-muted-foreground mb-4">
                   Certified Nutrition Expert and Wellness Coach. 
                   Focuses on holistic health transformation and dietary guidance.
