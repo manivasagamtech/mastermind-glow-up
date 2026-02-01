@@ -42,7 +42,7 @@ Looking forward to starting my transformation journey!`;
       name: "Ms. Poonam Modi", 
       phone: "+91 99908 97076",
       whatsapp: "https://wa.me/919990897076",
-      role: "Nutrition Expert & Wellness Coach"
+      role: "Director, Nutrition Expert & Wellness Coach"
     }
   ];
 
@@ -72,9 +72,9 @@ Looking forward to starting my transformation journey!`;
       icon: Youtube
     },
     {
-      platform: "LinkedIn",
-      handle: "MasterMind Body Global",
-      url: "http://linkedin.com/in/mastermind-bodyglobal-950991370",
+      platform: "LinkedIn - Dr. Deepti Verma",
+      handle: "Dr. Deepti Verma",
+      url: "https://www.linkedin.com/in/deepti-verma-950991370/",
       icon: Linkedin
     }
   ];
