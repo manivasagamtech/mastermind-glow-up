@@ -28,8 +28,8 @@ const connectLinks: ConnectLink[] = [
   },
   {
     label: 'Ms. Poonam Modi',
-    sublabel: 'Instagram · @poonammodi.nutritionist',
-    url: 'https://www.instagram.com/poonammodi.nutritionist',
+    sublabel: 'Instagram · @poonammodi06',
+    url: 'https://www.instagram.com/poonammodi06/',
     icon: Instagram,
     chipClass: 'bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]',
   },
