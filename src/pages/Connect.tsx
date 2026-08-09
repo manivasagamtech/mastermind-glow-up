@@ -76,9 +76,9 @@ const sections: ConnectSection[] = [
     icon: Mail,
     links: [
       {
-        label: 'deept.verma@mmbg.world',
+        label: 'deepti.verma@mmbg.world',
         description: 'For enquiries, collaborations, consultations, workshops and professional opportunities.',
-        url: 'mailto:deept.verma@mmbg.world',
+        url: 'mailto:deepti.verma@mmbg.world',
         icon: Mail,
         chipClass: 'bg-gradient-to-tr from-primary to-vibrant',
         external: false,
