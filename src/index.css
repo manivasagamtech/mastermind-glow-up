@@ -190,6 +190,36 @@ All colors MUST be HSL.
     @apply py-20 px-6 md:px-12 lg:px-20;
   }
   
+  /* /connect page: 3D tilt cards */
+  .tilt-card {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.25s ease-out;
+  }
+
+  .tilt-card:active {
+    transform: perspective(800px) scale(0.97) !important;
+  }
+
+  /* /connect page: staggered entrance */
+  .connect-item {
+    animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  /* /connect page: logo 3D flip-in + pulsing glow */
+  .connect-logo {
+    animation: logoFlipIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .connect-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  /* /connect page: floating background orbs */
+  .connect-orb {
+    animation: orbFloat 10s ease-in-out infinite;
+  }
+
   /* Mobile responsive video container */
   .video-container {
     @apply relative w-full;
@@ -222,4 +252,41 @@ All colors MUST be HSL.
 @keyframes staggeredFadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logoFlipIn {
+  from {
+    opacity: 0;
+    transform: perspective(800px) rotateY(90deg) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(800px) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px hsl(var(--primary-glow) / 0.45), 0 0 80px hsl(var(--vibrant) / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px hsl(var(--primary-glow) / 0.7), 0 0 120px hsl(var(--vibrant) / 0.35);
+  }
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(30px, -40px, 0) scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .connect-item,
+  .connect-logo,
+  .connect-glow,
+  .connect-orb,
+  .tilt-card {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
