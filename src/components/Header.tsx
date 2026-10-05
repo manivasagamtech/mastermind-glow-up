@@ -17,6 +17,7 @@ const Header = () => {
 
   const navItems = [
     { href: '#home', label: 'Home' },
+    { href: '#book', label: 'Book' },
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#transformations', label: 'Transformations' },
@@ -47,7 +48,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -68,7 +69,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white hover:text-energy transition-colors"
+            className="lg:hidden text-white hover:text-energy transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -78,7 +79,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
+          <div className="lg:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <a

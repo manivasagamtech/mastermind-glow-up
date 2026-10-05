@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import aboutImage from '@/assets/about-coaches.jpeg';
+import aboutImage from '@/assets/deepti-reading-book.jpeg';
 
 const AboutSection = () => {
   return (
@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <img 
               src={aboutImage} 
-              alt="Dr. Deepti Verma and Ms. Poonam Modi - Life Transformation Coaches"
+              alt="Dr. Deepti Verma reading her book Master Your Mind & Body"
               className="rounded-3xl shadow-2xl w-full max-w-md object-cover"
             />
           </div>
