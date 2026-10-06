@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import aboutImage from '@/assets/deepti-reading-book.jpeg';
+import deeptiImage from '@/assets/deepti-reading-book.jpeg';
 import poonamImage from '@/assets/poonam-modi.jpg';
 
 const AboutSection = () => {
@@ -18,20 +18,18 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="flex justify-center">
-            <img 
-              src={aboutImage} 
-              alt="Dr. Deepti Verma reading her book Master Your Mind & Body"
-              className="rounded-3xl shadow-2xl w-full max-w-md object-cover"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="space-y-6">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-              <CardContent className="p-6">
+        <div className="max-w-5xl mx-auto">
+          {/* One profile card per coach: photo on the left, details on the right */}
+          <div className="space-y-8">
+            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
+              <div className="grid sm:grid-cols-[240px_1fr] lg:grid-cols-[300px_1fr]">
+                <img
+                  src={deeptiImage}
+                  alt="Dr. Deepti Verma reading her book Master Your Mind & Body"
+                  className="w-full h-72 sm:h-full object-cover object-[50%_30%]"
+                  loading="lazy"
+                />
+              <CardContent className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-foreground">
                   Dr. Deepti Verma
                 </h3>
@@ -55,24 +53,22 @@ const AboutSection = () => {
                   </ul>
                 </div>
               </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={poonamImage}
-                    alt="Ms. Poonam Modi"
-                    className="w-20 h-24 sm:w-24 sm:h-28 shrink-0 rounded-2xl object-cover object-[50%_20%] shadow-md ring-2 ring-primary/20"
-                    loading="lazy"
-                  />
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-foreground">
-                      Ms. Poonam Modi
-                    </h3>
-                    <span className="inline-block bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-full">Director</span>
-                  </div>
-                </div>
+            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
+              <div className="grid sm:grid-cols-[240px_1fr] lg:grid-cols-[300px_1fr]">
+                <img
+                  src={poonamImage}
+                  alt="Ms. Poonam Modi"
+                  className="w-full h-72 sm:h-full object-cover object-[50%_20%]"
+                  loading="lazy"
+                />
+              <CardContent className="p-6 md:p-8">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  Ms. Poonam Modi
+                </h3>
+                <span className="inline-block bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-full mb-4">Director</span>
                 <p className="text-muted-foreground mb-4">
                   Certified Nutrition Expert and Wellness Coach. 
                   Focuses on holistic health transformation and dietary guidance.
@@ -83,6 +79,7 @@ const AboutSection = () => {
                   <Badge variant="secondary">Health Specialist</Badge>
                 </div>
               </CardContent>
+              </div>
             </Card>
 
             <Card className="bg-primary text-primary-foreground border-0 shadow-lg">
