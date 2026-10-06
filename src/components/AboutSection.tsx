@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import aboutImage from '@/assets/deepti-reading-book.jpeg';
+import poonamImage from '@/assets/poonam-modi.jpg';
 
 const AboutSection = () => {
   return (
@@ -58,10 +59,20 @@ const AboutSection = () => {
 
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">
-                  Ms. Poonam Modi
-                </h3>
-                <span className="inline-block bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-full mb-3">Director</span>
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src={poonamImage}
+                    alt="Ms. Poonam Modi"
+                    className="w-20 h-24 sm:w-24 sm:h-28 shrink-0 rounded-2xl object-cover object-[50%_20%] shadow-md ring-2 ring-primary/20"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-foreground">
+                      Ms. Poonam Modi
+                    </h3>
+                    <span className="inline-block bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-full">Director</span>
+                  </div>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   Certified Nutrition Expert and Wellness Coach. 
                   Focuses on holistic health transformation and dietary guidance.
