@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, BookOpen, Brain, PenLine, Star, ArrowUpRight } from 'lucide-react';
 import bookImage from '@/assets/book-launch.jpeg';
+import BookLaunchGallery from '@/components/BookLaunchGallery';
 
 const AMAZON_URL = 'https://www.amazon.in/Master-Your-Mind-Body-Create/dp/9371648147';
 
@@ -116,6 +117,8 @@ const BookSection = () => {
             </div>
           </div>
         </div>
+
+        <BookLaunchGallery />
       </div>
     </section>
   );
